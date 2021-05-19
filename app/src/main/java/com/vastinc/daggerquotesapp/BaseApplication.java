@@ -1,13 +1,20 @@
 package com.vastinc.daggerquotesapp;
 
+import android.app.Application;
+
+import com.vastinc.daggerquotesapp.di.AppComponent;
 import com.vastinc.daggerquotesapp.di.DaggerAppComponent;
 
-import dagger.android.AndroidInjector;
-import dagger.android.support.DaggerApplication;
 
-public class BaseApplication extends DaggerApplication {
+public class BaseApplication extends Application {
+    AppComponent appComponent;
     @Override
-    protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
-        return DaggerAppComponent.builder().application(this).build();
+    public void onCreate() {
+        super.onCreate();
+        appComponent = DaggerAppComponent.builder().application(this).build();
+    }
+
+    public AppComponent getAppComponent(){
+        return appComponent;
     }
 }

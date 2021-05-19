@@ -3,6 +3,7 @@ package com.vastinc.daggerquotesapp.ui;
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.bumptech.glide.RequestManager;
@@ -11,9 +12,7 @@ import com.vastinc.daggerquotesapp.viewmodel.ViewModelProviderFactory;
 
 import javax.inject.Inject;
 
-import dagger.android.support.DaggerAppCompatActivity;
-
-public class MainActivity extends DaggerAppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private MainActivityViewModel mainActivityViewModel;
