@@ -1,4 +1,4 @@
-package com.vastinc.daggerquotesapp.di;
+package com.vastinc.daggerquotesapp.di.scope;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
