@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DaggerQuotesApp</string>
+    <string name="random_quote">Random Quotes</string>
+    <string name="search_author">Search Author</string>
+    <string name="refresh">Refresh</string>
 </resources>

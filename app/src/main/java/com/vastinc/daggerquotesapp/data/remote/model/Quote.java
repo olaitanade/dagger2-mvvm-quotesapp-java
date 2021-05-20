@@ -26,4 +26,13 @@ public class Quote {
     public void setAuthor(String author) {
         this.author = author;
     }
+
+    @Override
+    public String toString() {
+        return "Quote{" +
+                "uuid='" + uuid + '\'' +
+                ", text='" + text + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
 }
